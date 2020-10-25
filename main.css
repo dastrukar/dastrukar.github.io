@@ -12,6 +12,10 @@ p {
     color: white;
 }
 
+red {
+    color: rgb(0, 255, 0)
+}
+
 a {
     color: skyblue;
 }
