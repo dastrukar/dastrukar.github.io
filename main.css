@@ -1,19 +1,21 @@
 body {
-    background-color: rgba(0, 0, 0, 0.7)
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 h1 {
     text-align: center;
-    background-color: rgba(0, 255, 0, 0.5)
+    background-color: rgba(0, 255, 0, 0.5);
+    font-family: Verdana;
 }
 
 p {
     text-align: center;
     color: white;
+    font-family: Verdana;
 }
 
 p.red {
-    color: rgb(255, 0, 0)
+    color: rgb(255, 0, 0);
 }
 
 a {
