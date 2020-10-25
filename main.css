@@ -1,23 +1,39 @@
 body {
     background-color: rgba(0, 0, 0, 0.7);
     font-family: 'Noto Sans';
+    
+    background-repeat: no-repeat;
+    
+    background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
+        
+    background-position:
+        /* white */8px 80px;
+    
+    background-size:
+        /* white */98.8% 100%;
+}
+
+body.white {
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 h1 {
     text-align: center;
-    background-color: rgba(0, 255, 0, 0.5);
+    background-color: rgba(50, 255, 50, 0.9);
     font-family: 'Source Code Pro';
 }
 
 p {
     text-align: center;
-    color: white;
+    color: black;
 }
 
 p.red {
     color: rgb(255, 0, 0);
+    font-weight: bold;
 }
 
 a {
-    color: skyblue;
+    color: dodgerblue;
 }
