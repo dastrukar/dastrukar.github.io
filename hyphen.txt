@@ -1,0 +1,62 @@
+Name: Hyphen
+
+Inspired by: Nuclear Throne, Noita, and other roguelike games
+
+Genre: Roguelike, Hack and Slash?
+
+Gameplay: 
+"Nothing makes sense,"
+"and you're dying."
+"Welcome to Hyphen."
+
+Random is fun, yeah? What do you mean no?
+Randomness is interesting, yeah?
+
+the following are random ideas with randomness thrown into it
+
+-Elements:
+    We all know that Water extinguishes Fire, but what if it didn't?
+    What if Water caused Fire to combust into bigger flames, or combust into more water instead?
+    What if Water caused Fire to start spewing out Electricity from it?
+    What if Water caused Fire to start exploding into rocks or ice shards?
+    
+    Essentially, the idea is that Elements (e.g: Fire, Water or whatever random shit) will have a defined rules (like how Fire burns you, and how Water makes you wet).
+    However, the way the Elements interact with each other will be randomised on each new run. ;]
+    Fun.
+    
+    Hey, what if enemies with certain Elements also interact with each other?
+    One can dream.
+
+now here's the no randomness stuff
+
+Player is your average man who has two hands, two legs, a head, other stuff that humans have.
+Player can only carry two weapons at a time.
+Weapons have a two categories, Ranged and Melee.
+Ranged weapons are used to, well, shoot enemies from afar or up close, and usually requires ammunition. (usually a gun or bow)
+Melee weapons are used to handle enemies that are close by, but can also be thrown for style. (some require ammo)
+
+If the Player has no weapons, they can resort to using the good ol' fists. (they suck though)
+The Player can also dash to dodge enemy attacks. (might limit the dashes)
+The Player can also deflect certain enemy projectiles with a melee weapon.
+
+Plot:
+"Darkness".
+"The only thing that I can see."
+"Some call it the void, but I call it home."
+"Or at least... It WAS my home."
+"I'm not sure what happened."
+"All I saw was a bright flash of light."
+"My body, now pressed against the battle armour that I used to don."
+"Greeted with tremendous amounts of pain."
+"It took awhile before I realised that I was back from the dead."
+"My surrounding, now filled with reanimated corpse and lunatic creatures."
+"The mountain that stood before me, flashes a bright light on the very top."
+"On the summit, a God stared at me, in anger."
+"Whatever this God is, it can't be doing something good."
+
+"And I'm not taking any of its shit."
+
+tl;dr: revived soldier is pissed at god and now wants god dead
+
+Game Feel:
+idk confusion?
