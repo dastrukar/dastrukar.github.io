@@ -30,6 +30,11 @@ a {
     color: dodgerblue;
 }
 
+pre {
+    font-family: 'Noto Sans';
+    color: black;
+}
+
 
 /* dividers */
 
