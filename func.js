@@ -1,20 +1,27 @@
 function fetch(id, page) {
+    console.log(page);
     // combine url
-    // page = 'https://dastrukar.codeberg.page/' + page
+    page = 'https://cdn.jsdelivr.net/gh/zarlib01/gid@main/' + page
 
     // send a request to url and also get the text file (if it exists that is)
     var request = new XMLHttpRequest();
-    request.open('GET', page);
-    request.send();
 
-    request.onreadyStateChange = function() {
+    request.onreadystatechange = function() {
+
+        console.log(this.readyState);
+        console.log(this.status);
+
         if (this.readyState == 4 && this.status == 200) {
+            console.log(this.responseText);
             document.getElementById(id).innerHTML = this.responseText;
         } else {
             // return an error
             document.getElementById(id).innerHTML = xmlerrorHandler(this.readyState, this.status);
         }
     }
+
+    request.open('GET', page);
+    request.send();
 }
 
 function xmlerrorHandler(readyState, status) {
