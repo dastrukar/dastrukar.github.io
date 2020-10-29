@@ -5,6 +5,7 @@
 body {
     background-color: rgba(0, 0, 0, 0.65);
     font-family: 'Noto Sans';
+    text-align: center;
 }
 
 body.white {
@@ -17,7 +18,6 @@ h1 {
 }
 
 p {
-    text-align: center;
     color: black;
 }
 
@@ -35,6 +35,26 @@ pre {
     color: black;
 }
 
+button.bold {
+    font-family: 'Noto Sans';
+    font-weight: bold;
+}
+
+button {
+    background-color: rgba(50, 255, 50, 0.8);
+    margin: 5px;
+}
+
+/* inputs */
+
+input {
+    text-align: center;
+    font-family: 'Noto Sans';
+}
+
+input.borderless {
+    border: none;
+}
 
 /* dividers */
 
