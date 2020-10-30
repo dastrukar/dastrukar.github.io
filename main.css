@@ -36,14 +36,28 @@ pre {
     color: black;
 }
 
+/* buttons */
+
 button.bold {
-    font-family: 'Noto Sans';
     font-weight: bold;
 }
 
 button {
-    background-color: rgba(50, 255, 50, 0.8);
+    font-family: 'Noto Sans';
     margin: 5px;
+}
+
+button.green {
+    background-color: rgb(50, 245, 50);
+    color: white;
+}
+button.green:hover {
+    background-color: rgb(50, 255, 50);
+    color: white;
+}
+button.green:active {
+    background-color: rgb(50, 225, 50);
+    color: white;
 }
 
 /* inputs */
