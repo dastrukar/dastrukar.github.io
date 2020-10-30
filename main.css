@@ -48,15 +48,15 @@ button {
 }
 
 button.green {
-    background-color: rgb(50, 245, 50);
+    background-color: rgb(40, 220, 40);
     color: white;
 }
 button.green:hover {
-    background-color: rgb(50, 255, 50);
+    background-color:rgb(40, 200, 40);
     color: white;
 }
 button.green:active {
-    background-color: rgb(50, 225, 50);
+    background-color: rgb(25, 150, 25);
     color: white;
 }
 
