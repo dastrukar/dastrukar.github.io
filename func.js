@@ -1,7 +1,13 @@
 function fetch(id, page) {
-    console.log(page);
+    // check if the input is empty
+    if (page.substring(page.length-4, page.length) != '.txt') {
+        document.getElementById(id).innerHTML = 'Invalid input.';
+        return null;
+    }
+
     // combine url
-    page = 'https://cdn.jsdelivr.net/gh/zarlib01/gid@main/' + page
+    page = 'https://cdn.jsdelivr.net/gh/zarlib01/gid@main/' + page;
+    console.log(page);
 
     // send a request to url and also get the text file (if it exists that is)
     var request = new XMLHttpRequest();
