@@ -1,0 +1,20 @@
+This is just a simple guide to adding new entries into the "Stuff that I made" list.
+
+To add a new entry, start with:
+<div class='container faded'>
+
+Next, an icon should be used as a button that links to the project.
+It should also use a class called: a.nohover
+<a title='example' href='https://lorem.ipsum' class='nohover' target='_blank'> 
+The icon should use an id called: #icon
+<img src=image.jpg class='rounded' id='icon'></img>
+Don't forget to close it off with a: </a>
+
+Next, a description should be used, with an id of: #text
+<p id='text'>
+    Lorem <br />
+    Ipsum.</p>
+
+Once you're done with that, make sure to add: </div>
+
+Congrats! You've just added a new entry ;p
