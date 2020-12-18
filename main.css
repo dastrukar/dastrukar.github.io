@@ -37,6 +37,7 @@ h2 {
 }
 
 p {
+    margin-bottom: 0;
     color: #3c3836;
 }
 
@@ -132,13 +133,22 @@ div.faded {
 
 #icon {
     align-self: left;
+    margin-right: 10px;
 }
 
 #text {
     font-size: 18px;
     align-self: right;
+    margin-left: auto;
 }
 
 div.end {
     clear: both;
+}
+
+/* media ;p */
+@media (max-width: 800px) {
+    div.faded {
+        flex-direction: column;
+    }
 }
