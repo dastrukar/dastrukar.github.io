@@ -2,6 +2,16 @@
   box-sizing: border-box;
 }
 
+::-moz-selection {
+    background-color: #427b58;
+    color: #ebdbb2;
+}
+
+::selection{
+    background-color: #427b58;
+    color: #ebdbb2;
+}
+
 body {
     background-color: #282828;
     color: #3c3836;
