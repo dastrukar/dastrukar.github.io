@@ -49,6 +49,11 @@ a {
     color: #458588;
 }
 
+a:hover {
+    background-color: #076678;
+    color: #ebdbb2;
+}
+
 pre {
     font-family: 'Cantarell';
     color: #3c3836;
