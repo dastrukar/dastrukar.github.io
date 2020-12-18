@@ -22,6 +22,7 @@ h1 {
 
 h2 {
     text-align: center;
+    font-weight: bold;
     font-family: 'Ubuntu';
 }
 
@@ -39,9 +40,8 @@ a {
 }
 
 pre {
-    font-family: 'Noto Sans';
-    text-align: left;
-    color: black;
+    font-family: 'Cantarell';
+    color: #3c3836;
 }
 
 /* buttons */
@@ -102,4 +102,16 @@ div {
 
 div.faded {
     background-color: #d5c4a1;
+}
+
+#icon {
+    float: left;
+}
+
+#text {
+    font-size: 18px;
+}
+
+div.end {
+    clear: both;
 }
