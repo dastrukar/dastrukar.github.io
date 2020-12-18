@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 ::-moz-selection {
@@ -120,11 +120,12 @@ div.faded {
 }
 
 #icon {
-    float: left;
+    display: inline-flex;
 }
 
 #text {
     font-size: 18px;
+    display: inline-flex;
 }
 
 div.end {
