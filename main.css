@@ -54,6 +54,15 @@ a:hover {
     color: #ebdbb2;
 }
 
+a.nohover {
+    color: #d5c4a1;
+}
+
+a.nohover:hover {
+    background-color: #d5c4a1;
+    color: #d5c4a1;
+}
+
 pre {
     font-family: 'Cantarell';
     color: #3c3836;
@@ -117,15 +126,17 @@ div {
 
 div.faded {
     background-color: #d5c4a1;
+    display: flex;
+    align-items: center;
 }
 
 #icon {
-    display: inline-flex;
+    align-self: left;
 }
 
 #text {
     font-size: 18px;
-    display: inline-flex;
+    align-self: right;
 }
 
 div.end {
