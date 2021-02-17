@@ -151,7 +151,7 @@ div {
     padding-top: 40px;
     padding-left: 30px;
     padding-right: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -205,6 +205,8 @@ div.faded a.nohover:hover {
 
 div.end {
     clear: both;
+    padding: 0;
+    margin: auto;
 }
 
 
