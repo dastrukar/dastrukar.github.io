@@ -1,53 +1,52 @@
 * {
     box-sizing: border-box;
+    text-align: center;
 }
+
 
 ::-moz-selection {
     background-color: #427b58;
     color: #ebdbb2;
 }
 
+
 ::selection{
     background-color: #427b58;
     color: #ebdbb2;
 }
+
 
 body {
     background-color: #282828;
     color: #3c3836;
     font-family: 'Cantarell';
     font-size: 20px;
-    text-align: center;
+    margin: 0;
 }
 
-body.white {
-    background-color: #fbf1c7 
-}
 
 h1 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
     font-family: 'Ubuntu';
     font-weight: bold;
 }
 
+
 h2 {
-    text-align: center;
     font-weight: bold;
     font-family: 'Ubuntu';
 }
+
 
 p {
     margin-top: 0;
     margin-bottom: 0;
-    color: #3c3836;
 }
 
 p.red {
     color: #cc241d;
     font-weight: bold;
 }
+
 
 a {
     color: #458588;
@@ -67,39 +66,64 @@ a.nohover:hover {
     color: #d5c4a1;
 }
 
+
 pre {
     font-family: 'Cantarell';
     color: #3c3836;
 }
 
-/* buttons */
+
+
+/* 
+BUTTONS
+*/
+
+button {
+    border: none;
+    font-family: 'Noto Sans';
+    margin: 5px;
+}
 
 button.bold {
     font-weight: bold;
 }
 
-button {
-    font-family: 'Noto Sans';
-    margin: 5px;
+
+button.blue {
+    background-color: #458588;
 }
+
+button.blue:hover {
+    background-color: #076678;
+}
+
+button.blue:active {
+    background-color: #83a598;
+}
+
 
 button.green {
     background-color: rgb(40, 220, 40);
     color: white;
 }
+
 button.green:hover {
     background-color:rgb(40, 200, 40);
     color: white;
 }
+
 button.green:active {
     background-color: rgb(25, 150, 25);
     color: white;
 }
 
-/* inputs */
+
+
+/*
+INPUTS
+*/
 
 input {
-    text-align: center;
     font-family: 'Noto Sans';
 }
 
@@ -107,7 +131,11 @@ input.borderless {
     border: none;
 }
 
-/* dividers */
+
+
+/*
+DIVIDERS
+*/
 
 div {
     width: 85%;
@@ -123,7 +151,8 @@ div {
     background-color: #ebdbb2;
 }
 
-.h {
+
+div.h {
     width: 100%;
     padding: 1px;
     margin: 0;
@@ -133,6 +162,12 @@ div {
     color: #ebdbb2;
 }
 
+div.h h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
 div.faded {
     width: 100%;
     background-color: #d5c4a1;
@@ -140,10 +175,12 @@ div.faded {
     align-items: center;
 }
 
+
 #icon {
     align-self: left;
     margin-right: 10px;
 }
+
 
 #text {
     font-size: 18px;
@@ -152,11 +189,16 @@ div.faded {
     margin-right: auto;
 }
 
+
 div.end {
     clear: both;
 }
 
-/* media ;p */
+
+
+/*
+MEDIA
+*/
 @media (max-width: 800px) {
     div.faded {
         flex-direction: column;
