@@ -73,8 +73,13 @@ pre {
 }
 
 
+img {
+    display: block;
+}
+
 img.icon {
     height: 64px;
+    display: inline-block;
     color: #3c3836;
     margin: 10px;
 }
