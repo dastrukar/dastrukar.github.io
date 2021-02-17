@@ -62,7 +62,7 @@ a.nohover {
 }
 
 a.nohover:hover {
-    background-color: #d5c4a1;
+    background-color: #ebdbb2;
     color: #d5c4a1;
 }
 
@@ -73,6 +73,13 @@ pre {
 }
 
 
+img.icon {
+    height: 64px;
+    color: #3c3836;
+    margin: 10px;
+}
+
+
 
 /* 
 BUTTONS
@@ -80,8 +87,12 @@ BUTTONS
 
 button {
     border: none;
+    font-size: 24px;
     font-family: 'Noto Sans';
+    text-align: center;
+    padding: 10px;
     margin: 5px;
+    color: #ebdbb2;
 }
 
 button.bold {
@@ -104,17 +115,14 @@ button.blue:active {
 
 button.green {
     background-color: rgb(40, 220, 40);
-    color: white;
 }
 
 button.green:hover {
     background-color:rgb(40, 200, 40);
-    color: white;
 }
 
 button.green:active {
     background-color: rgb(25, 150, 25);
-    color: white;
 }
 
 
@@ -173,6 +181,11 @@ div.faded {
     background-color: #d5c4a1;
     display: flex;
     align-items: center;
+}
+
+div.faded a.nohover:hover {
+    background-color: #d5c4a1;
+    color: #d5c4a1;
 }
 
 
