@@ -280,6 +280,7 @@ div.imgbg {
     width: 100%;
     z-index: 10;
     background-color: #d5c4a1;
+    background-repeat: repeat-y;
     background-size: cover;
     padding: 0;
 }
@@ -294,7 +295,48 @@ MEDIA
         flex-direction: column;
     }
 
+    div.imgbg {
+        background-repeat: repeat-y;
+        background-size: 100%;
+    }
+
     img {
         height: 24px;
+    }
+}
+
+@media (min-width: 2000px) {
+    h1 {
+        font-size: 64px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+
+    div {
+        width: 75%;
+    }
+
+    img {
+        height: 96px;
+    }
+
+    button.collapsible p {
+        font-size: 40px;
+    }
+
+    #icon {
+        height: 64px;
+        width: 64px;
+    }
+
+    img.icon {
+        height: 128px;
+        width: 128px;
     }
 }
