@@ -1,3 +1,35 @@
+document.addEventListener('DOMContentLoaded', function(event) {
+
+var collapse = document.getElementsByClassName('collapsible');
+var i;
+
+console.log(collapse[0])
+
+for (i = 0; i < collapse.length; i++) {
+    collapse[i].addEventListener('click', function() {
+        this.classList.toggle('active');
+
+        console.log(this.children);
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+            this.children[0].innerHTML = '+++';
+            this.children[2].innerHTML = '+++';
+            content.style.maxHeight = null;
+        } else {
+            this.children[0].innerHTML = '---';
+            this.children[2].innerHTML = '---';
+            content.style.maxHeight = content.scrollHeight + 'px';
+        }
+    });
+}
+
+});
+
+
+//==========================================
+// great-ideas functions
+//-----------------------
+
 function fetch(id, page) {
     // check if the input is empty
     if (page.substring(page.length-4, page.length) != '.txt') {
