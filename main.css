@@ -135,20 +135,21 @@ button.green:active {
 
 button.collapsible {
     width: 100%;
-    z-index: 10;
+    z-index: 20;
     display: flex;
     align-items: center;
     margin: auto;
     background-color: #00000000;
-    color: #3c3836;
+    background-image: linear-gradient(to bottom, #00000000, #282828A6);
+    color: #ebdbb2;
     font-family: "Fira Code";
     font-size: 20px;
     font-weight: bold;
 }
 
 button.collapsible:hover {
-    background-color: #28282819;
-    color: #ebdbb2;
+    background-color: #282828A6;
+    background-image: none;
 }
 
 button.collapsible p.left {
@@ -220,7 +221,9 @@ div.faded {
 div.content {
     max-height: 0;
     width: 100%;
-    background-color: #d5c4a1;
+    z-index: 40;
+    background-color: #00000000;
+    background-image: linear-gradient(to bottom, #282828A6, #282828FF);
     overflow: hidden;
     font-size: 18px;
     padding: 0;
@@ -231,6 +234,11 @@ div.content {
 div.content p {
     margin-top: 12px;
     margin-bottom: 12px;
+    color: #ebdbb2;
+}
+
+div.content #icon {
+    filter: invert(88%) sepia(32%) saturate(257%) hue-rotate(355deg) brightness(96%) contrast(92%);
 }
 
 
@@ -265,6 +273,14 @@ div.end {
     clear: both;
     padding: 0;
     margin: auto;
+}
+
+
+div.imgbg {
+    width: 100%;
+    z-index: 10;
+    background-color: #d5c4a1;
+    padding: 0;
 }
 
 
