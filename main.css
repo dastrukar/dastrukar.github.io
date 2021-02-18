@@ -143,13 +143,17 @@ button.collapsible {
     background-image: linear-gradient(to bottom, #00000000, #282828A6);
     color: #ebdbb2;
     font-family: "Fira Code";
-    font-size: 20px;
     font-weight: bold;
 }
 
 button.collapsible:hover {
     background-color: #282828A6;
     background-image: none;
+    color: #458588;
+}
+
+button.collapsible p {
+    transition: color 0.2s ease-in-out;
 }
 
 button.collapsible p.left {
@@ -295,6 +299,10 @@ MEDIA
         flex-direction: column;
     }
 
+    button.collapsible {
+        font-size: 20px;
+    }
+
     div.imgbg {
         background-repeat: repeat-y;
         background-size: 100%;
@@ -318,12 +326,8 @@ MEDIA
         font-size: 30px;
     }
 
-    div {
-        width: 75%;
-    }
-
     img {
-        height: 96px;
+        height: 90px;
     }
 
     button.collapsible p {
