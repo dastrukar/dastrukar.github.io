@@ -62,8 +62,8 @@ a.nohover {
 }
 
 a.nohover:hover {
-    background-color: #ebdbb2;
-    color: #d5c4a1;
+    background-color: unset;
+    color: unset;
 }
 
 
@@ -75,6 +75,8 @@ pre {
 
 img {
     display: block;
+    align-self: center;
+    margin: auto;
 }
 
 img.icon {
@@ -131,6 +133,33 @@ button.green:active {
 }
 
 
+button.collapsible {
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    background-color: #00000000;
+    color: #3c3836;
+    font-family: "Fira Code";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button.collapsible:hover {
+    background-color: #28282819;
+    color: #ebdbb2;
+}
+
+button.collapsible p.left {
+    text-align: left;
+}
+
+button.collapsible p.right {
+    text-align: right;
+}
+
+
 
 /*
 INPUTS
@@ -152,7 +181,6 @@ DIVIDERS
 
 div {
     width: 85%;
-    float: center;
     padding-top: 40px;
     padding-left: 30px;
     padding-right: 30px;
@@ -188,21 +216,46 @@ div.faded {
     align-items: center;
 }
 
-div.faded a.nohover:hover {
+
+div.content {
+    max-height: 0;
+    width: 100%;
     background-color: #d5c4a1;
-    color: #d5c4a1;
+    overflow: hidden;
+    font-size: 18px;
+    padding: 0;
+    margin: auto;
+    transition: max-height 0.2s ease-out;
+}
+
+div.content p {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+
+div.links {
+    width: max-content;
+    display: flex;
+    background-color: #00000000;
+    padding: 0;
+    vertical-align: middle;
 }
 
 
 #icon {
-    align-self: left;
-    margin-right: 10px;
+    height: 32px;
+    width: 32px;
+    margin: 8px;
+    align-self: center;
 }
 
 
 #text {
     font-size: 18px;
     align-self: right;
+    margin-top: 12px;
+    margin-bottom: 12px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -222,5 +275,9 @@ MEDIA
 @media (max-width: 800px) {
     div.faded {
         flex-direction: column;
+    }
+
+    img {
+        height: 24px;
     }
 }

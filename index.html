@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang='en'>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
         <!-- Fonts -->
-        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Code+Pro'>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Fira+Code'>
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Cantarell'>
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Noto+Sans'>
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ubuntu'>
         
         <!-- CSS -->
         <link rel='stylesheet' href='main.css'>
+        
+        <!-- JavaScript -->
+        <script src='func.js'></script>
         
         <title>dastrukar's page thing</title>
         
@@ -21,13 +26,23 @@
         </div>
         <div>
             <h2>Stuff that I made</h2>
-
-            <div class='faded'>
-                <a title='dPlay' href='https://github.com/dastrukar/dplay' class='nohover' target='_blank'><img src='dplay.jpg' id='icon'></img></a>
-                <p id='text'>
-                    dPlay(doomPlayer) is a small little program that I made in Python.<br />
-                    Designed to be simple, dPlay was made to assist my friends in loading Doom(tm) mods.</p>
+            
+            <button class='collapsible'><p class='left'>+++</p> <img src='dplay.jpg' /> <p class='right'>+++</p></button>
+            <div class='content'>
+                <p>
+                <br/>
+                dPlay(doomPlayer) is a small little program that I made in Python.<br />
+                Designed to be simple, dPlay was made to assist my friends in loading Doom(tm) mods.
+                <br/>
+                <br/>
+                Links:
+                <br/>
+                <div class=links>
+                    <a title='Github link' href='https://github.com/dastrukar/dplay' class='nohover' target='_blank'><img src='Octicons-mark-github.svg' id='icon' /></a>
+                </div>
+                </p>
             </div>
+            
             <div class='faded'>
                 <a title='FDHUD' href='https://github.com/dastrukar/fdhud' class='nohover' target='_blank'><img src='fdhud.jpg' id='icon'></img></a>
                 <p id='text'>
