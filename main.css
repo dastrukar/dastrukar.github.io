@@ -280,6 +280,8 @@ div.imgbg {
     width: 100%;
     z-index: 10;
     background-color: #d5c4a1;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 0;
 }
 
