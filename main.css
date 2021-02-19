@@ -32,13 +32,13 @@ h1 {
 
 
 h2 {
-    font-weight: bold;
     font-family: 'Ubuntu';
+    font-weight: bold;
 }
 
 
 p {
-    margin-top: 0;
+       margin-top: 0;
     margin-bottom: 0;
 }
 
@@ -68,21 +68,25 @@ a.nohover:hover {
 
 
 pre {
-    font-family: 'Cantarell';
     color: #3c3836;
+    font-family: 'Cantarell';
 }
 
 
 img {
     display: block;
+
     align-self: center;
+
     margin: auto;
 }
 
 img.icon {
     height: 64px;
     display: inline-block;
+
     color: #3c3836;
+
     margin: 10px;
 }
 
@@ -94,13 +98,17 @@ BUTTONS
 
 button {
     border: none;
-    font-size: 24px;
-    font-family: 'Noto Sans';
-    text-align: center;
-    padding: 10px;
-    margin: 5px;
-    color: #ebdbb2;
     cursor: pointer;
+
+    color: #ebdbb2;
+    text-align: center;
+
+      font-size: 24px;
+    font-family: 'Noto Sans';
+
+    padding: 10px;
+
+    margin: 5px;
 }
 
 button.bold {
@@ -136,15 +144,18 @@ button.green:active {
 
 button.collapsible {
     width: 100%;
-    z-index: 20;
     display: flex;
+    z-index: 20;
+
     align-items: center;
-    margin: auto;
     background-color: #00000000;
     background-image: linear-gradient(to bottom, #00000000, #282828A6);
     color: #ebdbb2;
+
     font-family: "Fira Code";
     font-weight: bold;
+
+    margin: auto;
 }
 
 button.collapsible:hover {
@@ -153,8 +164,16 @@ button.collapsible:hover {
     color: #458588;
 }
 
+button.collapsible:active {
+    color: #98971a;
+}
+
 button.collapsible p {
     transition: color 0.2s ease-in-out;
+}
+
+button.collapsible:active p {
+    transition: color 0s ease-out;
 }
 
 button.collapsible p.left {
@@ -187,12 +206,14 @@ DIVIDERS
 
 div {
     width: 85%;
-    padding-top: 40px;
-    padding-left: 30px;
-    padding-right: 30px;
+
+       padding-top: 40px;
+      padding-left: 30px;
+     padding-right: 30px;
     padding-bottom: 40px;
-    margin: auto;
-    margin-top: 20px;
+
+           margin: auto;
+       margin-top: 20px;
     margin-bottom: 20px;
     
     background-color: #ebdbb2;
@@ -201,25 +222,20 @@ div {
 
 div.h {
     width: 100%;
-    padding: 1px;
-    margin: 0;
-    margin-top: 20px;
-    margin-bottom: 20px;
+
     background-color: #98971a;
     color: #ebdbb2;
+
+    padding: 1px;
+
+           margin: 0;
+       margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 div.h h1 {
-    margin-top: 10px;
+       margin-top: 10px;
     margin-bottom: 10px;
-}
-
-
-div.faded {
-    width: 100%;
-    background-color: #d5c4a1;
-    display: flex;
-    align-items: center;
 }
 
 
@@ -227,19 +243,24 @@ div.content {
     max-height: 0;
     width: 100%;
     z-index: 40;
+
     background-color: #00000000;
     background-image: linear-gradient(to bottom, #282828A6, #282828FF);
     overflow: hidden;
     font-size: 18px;
+
     padding: 0;
+
     margin: auto;
+
     transition: max-height 0.3s ease-in-out;
 }
 
 div.content p {
-    margin-top: 12px;
-    margin-bottom: 12px;
     color: #ebdbb2;
+
+       margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 div.content #icon {
@@ -250,34 +271,41 @@ div.content #icon {
 div.links {
     width: max-content;
     display: flex;
+
     background-color: #00000000;
-    padding: 0;
     vertical-align: middle;
+
+    padding: 0;
 }
 
 
 #icon {
     height: 32px;
     width: 32px;
-    margin: 8px;
+
     align-self: center;
+
+    margin: 8px;
 }
 
 
 #text {
     font-size: 18px;
     align-self: right;
-    margin-top: 12px;
+
+       margin-top: 12px;
     margin-bottom: 12px;
-    margin-left: auto;
-    margin-right: auto;
+      margin-left: auto;
+     margin-right: auto;
 }
 
 
 div.end {
     clear: both;
+
     padding: 0;
-    margin: auto;
+
+        margin: auto;
     margin-top: 50px;
 }
 
@@ -285,9 +313,11 @@ div.end {
 div.imgbg {
     width: 100%;
     z-index: 10;
-    background-color: #d5c4a1;
+
+     background-color: #d5c4a1;
     background-repeat: repeat-y;
-    background-size: cover;
+      background-size: cover;
+
     padding: 0;
 }
 
@@ -297,17 +327,13 @@ div.imgbg {
 MEDIA
 */
 @media (max-width: 800px) {
-    div.faded {
-        flex-direction: column;
-    }
-
     button.collapsible {
         font-size: 20px;
     }
 
     div.imgbg {
         background-repeat: repeat-y;
-        background-size: 100%;
+          background-size: 100%;
     }
 
     img {
@@ -338,11 +364,11 @@ MEDIA
 
     #icon {
         height: 64px;
-        width: 64px;
+         width: 64px;
     }
 
     img.icon {
         height: 128px;
-        width: 128px;
+         width: 128px;
     }
 }
