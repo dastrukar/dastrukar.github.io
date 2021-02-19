@@ -50,10 +50,11 @@ p.red {
 
 a {
     color: #458588;
+    transition: all 0.2s ease-in-out;
 }
 
 a:hover {
-    background-color: #076678;
+    background-color: #07667880;
     color: #ebdbb2;
 }
 
@@ -265,6 +266,16 @@ div.content p {
 
 div.content #icon {
     filter: invert(88%) sepia(32%) saturate(257%) hue-rotate(355deg) brightness(96%) contrast(92%);
+
+    transition: filter 0.1s ease-in-out;
+}
+
+div.content ::-moz-selection {
+    background-color: #427b5880;
+}
+
+div.content ::selection {
+    background-color: #427b5880;
 }
 
 
