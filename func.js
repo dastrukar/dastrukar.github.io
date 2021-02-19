@@ -1,15 +1,14 @@
 document.addEventListener('DOMContentLoaded', function(event) {
 
 var collapse = document.getElementsByClassName('collapsible');
+var links    = document.getElementsByClassName('links');
 var i;
 
-console.log(collapse[0])
 
 for (i = 0; i < collapse.length; i++) {
     collapse[i].addEventListener('click', function() {
         this.classList.toggle('active');
 
-        console.log(this.children);
         var content = this.nextElementSibling;
         if (content.style.maxHeight) {
             this.children[0].innerHTML = '+++';
@@ -21,6 +20,23 @@ for (i = 0; i < collapse.length; i++) {
             content.style.maxHeight = content.scrollHeight + 'px';
         }
     });
+}
+
+
+for (c = 0; c < links.length; c++) {
+    var currentlinks = links[c]
+
+    for (i = 0; i < currentlinks.children.length; i++) {
+        var a = currentlinks.children[i];
+
+        a.addEventListener('mouseover', function() {
+            this.children[0].style.filter = 'invert(45%) sepia(64%) saturate(313%) hue-rotate(134deg) brightness(90%) contrast(83%)';
+        });
+
+        a.addEventListener('mouseout', function() {
+            this.children[0].style.filter = 'invert(88%) sepia(32%) saturate(257%) hue-rotate(355deg) brightness(96%) contrast(92%)';
+        });
+    }
 }
 
 });
