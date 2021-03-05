@@ -59,7 +59,8 @@ a:hover {
 }
 
 a.nohover {
-    color: #d5c4a1;
+    color: transparent;
+    transition: none;
 }
 
 a.nohover:hover {
@@ -325,11 +326,13 @@ div.imgbg {
     width: 100%;
     z-index: 10;
 
-     background-color: #d5c4a1;
+     background-color: #282828;
     background-repeat: repeat-y;
       background-size: cover;
 
     padding: 0;
+
+    transition: all 0.2s ease-in-out;
 }
 
 
