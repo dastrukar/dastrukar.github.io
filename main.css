@@ -83,6 +83,11 @@ img {
     margin: auto;
 }
 
+img.title {
+    min-width: 64px;
+    max-height: 64px;
+}
+
 img.icon {
     height: 64px;
     display: inline-block;
