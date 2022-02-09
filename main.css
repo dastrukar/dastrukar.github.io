@@ -3,24 +3,42 @@
     text-align: center;
 }
 
+:root {
+    --bg0: #2e3440;
+    --bg1: #3b4252;
+    --fg0: #eceff4;
 
-::-moz-selection {
-    background-color: #427b58;
-    color: #ebdbb2;
+    --link0: #81a1c1;
+    --link1: #81a1c180;
+
+    --button-hover: #3b4252A6;
+
+    --icon1: invert(65%);
+    --icon2: sepia(14%);
+    --icon3: saturate(734%);
+    --icon4: hue-rotate(169deg);
+    --icon5: brightness(93%);
+    --icon6: contrast(94%);
+
+    --icon-hover1: invert(89%);
+    --icon-hover2: sepia(13%);
+    --icon-hover3: saturate(366%);
+    --icon-hover4: hue-rotate(197deg);
+    --icon-hover5: brightness(107%);
+    --icon-hover6: contrast(91%);
 }
 
 
 ::selection{
-    background-color: #427b58;
-    color: #ebdbb2;
+    background-color: var(--link1);
 }
 
 
 body {
-    background-color: #282828;
-    color: #3c3836;
+    background-color: var(--bg0);
+    color: var(--fg0);
     font-family: 'Cantarell';
-    font-size: 20px;
+    font-size: 1rem;
     margin: 0;
 }
 
@@ -38,7 +56,7 @@ h2 {
 
 
 p {
-       margin-top: 0;
+    margin-top: 0;
     margin-bottom: 0;
 }
 
@@ -49,13 +67,13 @@ p.red {
 
 
 a {
-    color: #458588;
+    color: var(--link0);
     transition: all 0.2s ease-in-out;
 }
 
 a:hover {
-    background-color: #07667880;
-    color: #ebdbb2;
+    background-color: var(--link1);
+    color: var(--fg);
 }
 
 a.nohover {
@@ -66,12 +84,6 @@ a.nohover {
 a.nohover:hover {
     background-color: unset;
     color: unset;
-}
-
-
-pre {
-    color: #3c3836;
-    font-family: 'Cantarell';
 }
 
 
@@ -157,7 +169,7 @@ button.collapsible {
 
     align-items: center;
     background-color: #00000000;
-    background-image: linear-gradient(to bottom, #00000000, #282828A6);
+    background-image: linear-gradient(to bottom, #00000000, var(--button-hover));
     color: #ebdbb2;
 
     font-family: "Fira Code";
@@ -167,7 +179,7 @@ button.collapsible {
 }
 
 button.collapsible:hover {
-    background-color: #282828A6;
+    background-color: var(--button-hover);
     background-image: none;
     color: #458588;
 }
@@ -224,15 +236,14 @@ div {
        margin-top: 20px;
     margin-bottom: 20px;
     
-    background-color: #ebdbb2;
+    background-color: var(--bg1);
 }
 
 
 div.h {
     width: 100%;
 
-    background-color: #98971a;
-    color: #ebdbb2;
+    background-color: #5e81ac;
 
     padding: 1px;
 
@@ -253,7 +264,7 @@ div.content {
     z-index: 40;
 
     background-color: #00000000;
-    background-image: linear-gradient(to bottom, #282828A6, #282828FF);
+    background-image: linear-gradient(to bottom, var(--button-hover), var(--bg1));
     overflow: hidden;
     font-size: 18px;
 
@@ -265,26 +276,9 @@ div.content {
 }
 
 div.content p {
-    color: #ebdbb2;
-
-       margin-top: 12px;
+    margin-top: 12px;
     margin-bottom: 12px;
 }
-
-div.content #icon {
-    filter: invert(88%) sepia(32%) saturate(257%) hue-rotate(355deg) brightness(96%) contrast(92%);
-
-    transition: filter 0.1s ease-in-out;
-}
-
-div.content ::-moz-selection {
-    background-color: #427b5880;
-}
-
-div.content ::selection {
-    background-color: #427b5880;
-}
-
 
 div.links {
     width: max-content;
@@ -296,14 +290,20 @@ div.links {
     padding: 0;
 }
 
-
-#icon {
+div.content img.icon {
     height: 32px;
     width: 32px;
+    margin: 8px;
 
     align-self: center;
 
-    margin: 8px;
+    filter: var(--icon1) var(--icon2) var(--icon3) var(--icon4) var(--icon5) var(--icon6);
+
+    transition: filter 0.1s ease-in-out;
+}
+
+div.content img.icon:hover {
+    filter: var(--icon-hover1) var(--icon-hover2) var(--icon-hover3) var(--icon-hover4) var(--icon-hover5) var(--icon-hover6);
 }
 
 
@@ -332,9 +332,9 @@ div.imgbg {
     width: 100%;
     z-index: 10;
 
-     background-color: #282828;
+    background-color: var(--bg1);
     background-repeat: repeat-y;
-      background-size: cover;
+    background-size: cover;
 
     padding: 0;
 

@@ -21,24 +21,6 @@ for (i = 0; i < collapse.length; i++) {
         }
     });
 }
-
-
-for (c = 0; c < links.length; c++) {
-    var currentlinks = links[c]
-
-    for (i = 0; i < currentlinks.children.length; i++) {
-        var a = currentlinks.children[i];
-
-        a.addEventListener('mouseover', function() {
-            this.children[0].style.filter = 'invert(45%) sepia(64%) saturate(313%) hue-rotate(134deg) brightness(90%) contrast(83%)';
-        });
-
-        a.addEventListener('mouseout', function() {
-            this.children[0].style.filter = 'invert(88%) sepia(32%) saturate(257%) hue-rotate(355deg) brightness(96%) contrast(92%)';
-        });
-    }
-}
-
 });
 
 
