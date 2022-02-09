@@ -150,6 +150,7 @@ button.green:active {
 
 
 button.collapsible {
+    height: 90px;
     width: 100%;
     display: flex;
     z-index: 20;
@@ -347,6 +348,7 @@ MEDIA
 */
 @media (max-width: 800px) {
     button.collapsible {
+        height: 50px;
         font-size: 20px;
     }
 
@@ -377,17 +379,21 @@ MEDIA
         height: 90px;
     }
 
-    button.collapsible p {
+    button.collapsible {
+        height: 154px;
         font-size: 40px;
     }
 
     #icon {
         height: 64px;
-         width: 64px;
+    }
+
+    img.title {
+        min-width: 128px;
+        max-height: 128px;
     }
 
     img.icon {
         height: 128px;
-         width: 128px;
     }
 }
