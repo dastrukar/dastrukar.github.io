@@ -1,11 +1,8 @@
-* {
-    box-sizing: border-box;
-    text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
 
 :root {
     --bg0: #2e3440;
-    --bg1: #3b4252;
+    --bg1: #3b4252C6;
     --fg0: #eceff4;
 
     --link0: #81a1c1;
@@ -36,33 +33,38 @@
 
 body {
     background-color: var(--bg0);
+    background-image: url("images/bg.png");
     color: var(--fg0);
-    font-family: 'Cantarell';
+    font-family: "Kosugi Maru";
     font-size: 1rem;
     margin: 0;
 }
 
-
 h1 {
-    font-family: 'Ubuntu';
+    text-align: center;
+}
+
+h2, h3 {
     font-weight: bold;
 }
 
-
 h2 {
-    font-family: 'Ubuntu';
-    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    margin-bottom: 0.5rem;
+}
+
+h2.top {
+    margin-top: 0;
 }
 
 
 p {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-p.red {
-    color: #cc241d;
-    font-weight: bold;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
 }
 
 
@@ -87,138 +89,6 @@ a.nohover:hover {
 }
 
 
-img {
-    display: block;
-
-    align-self: center;
-
-    margin: auto;
-}
-
-img.title {
-    min-width: 64px;
-    max-height: 64px;
-}
-
-img.icon {
-    height: 64px;
-    display: inline-block;
-
-    color: #3c3836;
-
-    margin: 10px;
-}
-
-
-
-/* 
-BUTTONS
-*/
-
-button {
-    border: none;
-    cursor: pointer;
-
-    color: #ebdbb2;
-    text-align: center;
-
-      font-size: 24px;
-    font-family: 'Noto Sans';
-
-    padding: 10px;
-
-    margin: 5px;
-}
-
-button.bold {
-    font-weight: bold;
-}
-
-
-button.blue {
-    background-color: #458588;
-}
-
-button.blue:hover {
-    background-color: #076678;
-}
-
-button.blue:active {
-    background-color: #83a598;
-}
-
-
-button.green {
-    background-color: rgb(40, 220, 40);
-}
-
-button.green:hover {
-    background-color:rgb(40, 200, 40);
-}
-
-button.green:active {
-    background-color: rgb(25, 150, 25);
-}
-
-
-button.collapsible {
-    height: 90px;
-    width: 100%;
-    display: flex;
-    z-index: 20;
-
-    align-items: center;
-    background-color: #00000000;
-    background-image: linear-gradient(to bottom, #00000000, var(--button-hover));
-    color: #ebdbb2;
-
-    font-family: "Fira Code";
-    font-weight: bold;
-
-    margin: auto;
-}
-
-button.collapsible:hover {
-    background-color: var(--button-hover);
-    background-image: none;
-    color: #458588;
-}
-
-button.collapsible:active {
-    color: #98971a;
-}
-
-button.collapsible p {
-    transition: color 0.2s ease-in-out;
-}
-
-button.collapsible:active p {
-    transition: color 0s ease-out;
-}
-
-button.collapsible p.left {
-    text-align: left;
-}
-
-button.collapsible p.right {
-    text-align: right;
-}
-
-
-
-/*
-INPUTS
-*/
-
-input {
-    font-family: 'Noto Sans';
-}
-
-input.borderless {
-    border: none;
-}
-
-
 
 /*
 DIVIDERS
@@ -240,123 +110,11 @@ div {
 }
 
 
-div.h {
-    width: 100%;
-
-    background-color: #5e81ac;
-
-    padding: 1px;
-
-           margin: 0;
-       margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-div.h h1 {
-       margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-
-div.content {
-    max-height: 0;
-    width: 100%;
-    z-index: 40;
-
-    background-color: #00000000;
-    background-image: linear-gradient(to bottom, var(--button-hover), var(--bg1));
-    overflow: hidden;
-    font-size: 18px;
-
-    padding: 0;
-
-    margin: auto;
-
-    transition: max-height 0.3s ease-in-out;
-}
-
-div.content p {
-    margin-top: 12px;
-    margin-bottom: 12px;
-}
-
-div.links {
-    width: max-content;
-    display: flex;
-
-    background-color: #00000000;
-    vertical-align: middle;
-
-    padding: 0;
-}
-
-div.content img.icon {
-    height: 32px;
-    width: 32px;
-    margin: 8px;
-
-    align-self: center;
-
-    filter: var(--icon1) var(--icon2) var(--icon3) var(--icon4) var(--icon5) var(--icon6);
-
-    transition: filter 0.1s ease-in-out;
-}
-
-div.content img.icon:hover {
-    filter: var(--icon-hover1) var(--icon-hover2) var(--icon-hover3) var(--icon-hover4) var(--icon-hover5) var(--icon-hover6);
-}
-
-
-#text {
-    font-size: 18px;
-    align-self: right;
-
-       margin-top: 12px;
-    margin-bottom: 12px;
-      margin-left: auto;
-     margin-right: auto;
-}
-
-
-div.end {
-    clear: both;
-
-    padding: 0;
-
-        margin: auto;
-    margin-top: 50px;
-}
-
-
-div.imgbg {
-    width: 100%;
-    z-index: 10;
-
-    background-color: var(--bg1);
-    background-repeat: repeat-y;
-    background-size: cover;
-
-    padding: 0;
-
-    transition: all 0.2s ease-in-out;
-}
-
-
 
 /*
 MEDIA
 */
 @media (max-width: 800px) {
-    button.collapsible {
-        height: 50px;
-        font-size: 20px;
-    }
-
-    div.imgbg {
-        background-repeat: repeat-y;
-          background-size: 100%;
-    }
-
     img {
         height: 24px;
     }
@@ -364,15 +122,19 @@ MEDIA
 
 @media (min-width: 2000px) {
     h1 {
-        font-size: 64px;
+        font-size: 4rem;
     }
 
     h2 {
-        font-size: 40px;
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2.35rem;
     }
 
     p {
-        font-size: 30px;
+        font-size: 2rem;
     }
 
     img {
