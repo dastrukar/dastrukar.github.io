@@ -93,13 +93,13 @@ DIVIDERS
 div {
     width: 85%;
 
-       padding-top: 40px;
-      padding-left: 30px;
-     padding-right: 30px;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-bottom: 40px;
 
-           margin: auto;
-       margin-top: 20px;
+    margin: auto;
+    margin-top: 20px;
     margin-bottom: 20px;
     
     background-color: var(--bg1);
