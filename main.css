@@ -49,16 +49,12 @@ h2, h3 {
 }
 
 h2 {
-    margin-top: 2rem;
+    margin-top: 0;
     margin-bottom: 1rem;
 }
 
 h3 {
     margin-bottom: 0.5rem;
-}
-
-h2.top {
-    margin-top: 0;
 }
 
 
@@ -109,6 +105,10 @@ div {
     background-color: var(--bg1);
 }
 
+div.center {
+    text-align: center;
+}
+
 
 
 /*
@@ -121,20 +121,8 @@ MEDIA
 }
 
 @media (min-width: 2000px) {
-    h1 {
-        font-size: 4rem;
-    }
-
-    h2 {
-        font-size: 3rem;
-    }
-
-    h3 {
-        font-size: 2.35rem;
-    }
-
-    p {
-        font-size: 2rem;
+    body {
+        font-size: 200%;
     }
 
     img {
