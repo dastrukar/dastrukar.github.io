@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kosugi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap');
 
 :root {
     --bg0: #2e3440;
@@ -35,7 +35,7 @@ body {
     background-color: var(--bg0);
     background-image: url("images/bg.png");
     color: var(--fg0);
-    font-family: "Kosugi";
+    font-family: "Fira Sans Condensed";
     font-size: 1rem;
     margin: 0;
 }
